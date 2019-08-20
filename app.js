@@ -9,7 +9,7 @@ const connection = mongoose.connect('mongodb+srv://hansamal:hansamal1234@cluster
 connection .then((db) => { console.log("Connected correctly to server"); }) .catch((err) => { console.log(err) });
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const usersRouter = require('./routes/users');
 
 var app = express();
 
