@@ -51,17 +51,10 @@ router.post('/', [
           res.setHeader('Content-Type', 'application/json');
           res.json({ id: user._id, name: user.name, email: user.email });
         })
-        .catch(err => {
-          next(err);
+        .catch(err => {next(err);
         });
-
-
     }
 });
 
-// /* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
 
 module.exports = router;
